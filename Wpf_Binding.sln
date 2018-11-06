@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_Binding", "Wpf_Binding\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleObject", "SingleObject\SingleObject.csproj", "{333A1D00-AF2F-4AB9-9022-E0D112DA2174}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collection", "Collection\Collection.csproj", "{EEED259A-BD42-4E04-8FA1-D913B3B036B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{333A1D00-AF2F-4AB9-9022-E0D112DA2174}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{333A1D00-AF2F-4AB9-9022-E0D112DA2174}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{333A1D00-AF2F-4AB9-9022-E0D112DA2174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEED259A-BD42-4E04-8FA1-D913B3B036B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEED259A-BD42-4E04-8FA1-D913B3B036B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEED259A-BD42-4E04-8FA1-D913B3B036B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEED259A-BD42-4E04-8FA1-D913B3B036B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
