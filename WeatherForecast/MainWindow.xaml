@@ -22,6 +22,19 @@
             <RadioButton Content="Celsius" IsChecked="True" Margin="10,4" />
             <RadioButton Content="Fahrenheit" Margin="20,4" />
         </StackPanel>
-        <ListBox ItemsSource="{Binding}" Grid.Row="2" HorizontalAlignment="Stretch"></ListBox>
+        <ListBox ItemsSource="{Binding}" Grid.Row="2" HorizontalAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Margin="4" BorderBrush="Black" Padding="4" BorderThickness="2" Background="White">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="20" FontWeight="Bold" Text="{Binding GeneralForecast}" />
+                            <TextBlock FontSize="16" Margin="10,0,0,0" VerticalAlignment="Bottom" Text="{Binding TemperatureLow, StringFormat='Low: \{0:N2\}'}" />
+                            <TextBlock FontSize="16" Margin="10,0,0,0" VerticalAlignment="Bottom" />
+                            <TextBlock FontSize="16" Margin="20,0,0,0" VerticalAlignment="Bottom" Text="{Binding Percipitation, StringFormat='Percip: \{0:N2\}'}" />
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
