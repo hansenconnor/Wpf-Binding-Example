@@ -6,6 +6,10 @@
         xmlns:local="clr-namespace:WeatherForecast"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+
+    <Window.Resources>
+        <local:GeneralForecastToBrushConverter x:Key="gf2gbrush" />
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -25,7 +29,7 @@
         <ListBox ItemsSource="{Binding}" Grid.Row="2" HorizontalAlignment="Stretch">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Border Margin="4" BorderBrush="Black" Padding="4" BorderThickness="2" Background="White">
+                    <Border Margin="4" BorderBrush="Black" Padding="4" BorderThickness="2" Background="{Binding GeneralForecast, Converter={StaticResource gf2gbrush}}">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontSize="20" FontWeight="Bold" Text="{Binding GeneralForecast}" />
                             <TextBlock FontSize="16" Margin="10,0,0,0" VerticalAlignment="Bottom" Text="{Binding TemperatureLow, StringFormat='Low: \{0:N2\}'}" />
