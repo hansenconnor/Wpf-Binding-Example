@@ -1,0 +1,27 @@
+﻿<Window x:Class="WeatherForecast.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherForecast"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Select number of days to forecast:" FontSize="15" VerticalAlignment="Center" Margin="4" />
+            <ComboBox x:Name="_days" SelectedIndex="0" Width="50" />
+            <Button Margin="4" Content="Get Forecast" FontSize="16" Click="Button_Click" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="4" TextBlock.FontSize="15">
+            <TextBlock Text="Select units:" Margin="4" />
+            <RadioButton Content="Celsius" IsChecked="True" Margin="10,4" />
+            <RadioButton Content="Fahrenheit" Margin="20,4" />
+        </StackPanel>
+        <ListBox ItemsSource="{Binding}" Grid.Row="2" HorizontalAlignment="Stretch"></ListBox>
+    </Grid>
+</Window>

@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collection", "Collection\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTemplates", "DataTemplates\DataTemplates.csproj", "{223EE5F7-5E9E-4244-B2AF-27BE55EA84F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueConverters", "ValueConverters\ValueConverters.csproj", "{EE7AAB2A-D272-4F37-8D49-F27728B6CAC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast", "WeatherForecast\WeatherForecast.csproj", "{599E5017-E485-4E1B-9F96-6684AE81D91F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{223EE5F7-5E9E-4244-B2AF-27BE55EA84F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{223EE5F7-5E9E-4244-B2AF-27BE55EA84F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{223EE5F7-5E9E-4244-B2AF-27BE55EA84F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE7AAB2A-D272-4F37-8D49-F27728B6CAC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE7AAB2A-D272-4F37-8D49-F27728B6CAC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE7AAB2A-D272-4F37-8D49-F27728B6CAC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE7AAB2A-D272-4F37-8D49-F27728B6CAC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{599E5017-E485-4E1B-9F96-6684AE81D91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{599E5017-E485-4E1B-9F96-6684AE81D91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{599E5017-E485-4E1B-9F96-6684AE81D91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{599E5017-E485-4E1B-9F96-6684AE81D91F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
